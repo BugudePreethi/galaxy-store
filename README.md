@@ -1,2 +1,2 @@
-# galaxy-store
+Galaxy Store
 Online clothing store
