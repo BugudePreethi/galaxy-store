@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'galaxy-store-angular';
+  email : string | undefined;
+  password : string | undefined;
+
+  constructor(){
+    
+  }
+
+  ngOnInit() {
+
+  }
+
+  logInUser(){
+    if(this.email == ""){
+
+    }
+  }
+  
 }
