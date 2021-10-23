@@ -34,10 +34,10 @@
             </div>
             <div class="form-group">
                 <label for="mobile"><b>MOBILE PHONE:</b></label>
-                <input type="text" name="mobile" [(ngModel)]="customer.mobile" id="mobile" class="form-control">
+                <input type="text" name="mobile" [(ngModel)]="customer.mobileNumber" id="mobile" class="form-control">
             </div>
             <div>
-                <input type="button" class="btn btn-primary" value="SignUp" id="signup">
+                <input type="button" class="btn btn-primary" value="SignUp" (click)="signup()" id="signup">
             </div>
         </form>
     </div>

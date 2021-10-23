@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Customer } from '../model/customer';
+import { HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -12,11 +13,12 @@ export class CustomerService {
   constructor(private httpClient: HttpClient) { }
 
   signup(customer: Customer): Observable<any> {
+    const headers = { 'content-type': 'application/json'};
     console.log("Signup Service");
-    let header : HttpHeaders = new HttpHeaders();
-    header = header.set('Content-Type', 'application/json');
     return this.httpClient.post<any>(
-      this.signupUrl, JSON.stringify(customer), {headers: header});
+      this.signupUrl , customer, {'headers':headers}
+      );
+    
   }
 
 }
