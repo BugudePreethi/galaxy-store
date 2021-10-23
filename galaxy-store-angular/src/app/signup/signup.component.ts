@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Customer } from '../model/customer';
+import { CustomerService } from '../service/customer.service';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -6,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  customer : Customer ={
+    id: 0,
+    name: "",
+    email: "",
+    password: "",
+    address: "",
+    mobileNumber: ""
+  }
+
+  success: boolean = true;
+  constructor(private customerService: CustomerService) { }
 
   ngOnInit(): void {
+  }
+
+  signup(): void {
+    let observable : Observable<any> = this.customerService.signup(this.customer);
+    observable.subscribe(
+      response => {
+        this.success = true;
+      },
+      error => {
+        //this.error = error;
+      }
+    );
+
   }
 
 }
