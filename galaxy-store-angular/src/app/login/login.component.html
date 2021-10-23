@@ -1,14 +1,17 @@
-<h1 class="text-center">LOGIN</h1>
-<form>
+<div class="banner-image">
+  <h1 class="text-center">LOGIN</h1>
+
+  <form>
     <div class="form-group">
-      <label>Email address</label>
-      <input type="email" class="form-control">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
     </div>
-    
     <div class="form-group">
-      <label>Password</label>
-      <input type="password" class="form-control" >
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
     </div>
-    
-    <button type="submit" class="btn btn-primary">Login</button>
+    <div>
+      <input type="button" class="btn btn-primary" value="Login" id="login">
+    </div>
   </form>
+</div>

@@ -4,57 +4,47 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class Customer {
 	
 	@Id
 	private int id;
-	private String userName;
-	private String emailId;
+	private String name;
+	private String email;
 	private String password;
-	private int mobileNumber;
+	private String mobileNumber;
 	private String address;
 	
 	
-	
-	
-	public User() {
+	public Customer() {
 		
 	}
 	
-	
-	
-	
-	public User(int id, String userName, String emailId, String password, int mobileNumber, String address) {
+	public Customer(int id, String name, String email, String password, String mobileNumber, String address) {
 		super();
 		this.id = id;
-		this.userName = userName;
-		this.emailId = emailId;
+		this.name = name;
+		this.email = email;
 		this.password = password;
 		this.mobileNumber = mobileNumber;
 		this.address = address;
 	}
-	
-	
-	
-	
-	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getUserName() {
-		return userName;
+	public String getName() {
+		return name;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getEmailId() {
-		return emailId;
+	public String getEmail() {
+		return email;
 	}
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public String getPassword() {
 		return password;
@@ -62,10 +52,10 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public int getMobileNumber() {
+	public String getMobileNumber() {
 		return mobileNumber;
 	}
-	public void setMobileNumber(int mobileNumber) {
+	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
 	}
 	public String getAddress() {
@@ -74,6 +64,10 @@ public class User {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
+	
+	
+	
 	
 	
 	
