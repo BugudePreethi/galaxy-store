@@ -17,18 +17,18 @@ export class LoginComponent implements OnInit {
   }
 
 
-  login(): void {
+  // login(): void {
 
-    console.log("login starts");
-    let observable : Observable<any> = this.customerService.login();
+  //   console.log("login starts");
+  //   let observable : Observable<any> = this.customerService.login();
 
-    observable.subscribe(
-      response => {
-        this.success = true;
-      },
-      error => {
-        //this.error = error;
-      }
+  //   observable.subscribe(
+  //     response => {
+  //       this.success = true;
+  //     },
+  //     error => {
+  //       //this.error = error;
+  //     }
 
 
   }

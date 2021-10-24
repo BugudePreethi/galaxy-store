@@ -13,7 +13,7 @@ public class RegistrationService {
 	@Autowired
 	private RegistrationRepository repo;
 	
-	public Customer saveUser(Customer customer) {
+	public Customer saveCustomer(Customer customer) {
 		return repo.save(customer);
 		
 	}

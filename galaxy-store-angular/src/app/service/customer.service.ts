@@ -12,12 +12,12 @@ export class CustomerService {
 
   constructor(private httpClient : HttpClient) { }
 
-  login() : Observable<any> {
+  login() : void {
     const headers = { 'content-type': 'application/json'};
     console.log("service start");
-    return this.httpClient.get<any>(
-      this.usersUrl, customer, {'headers' : headers}
-    );
+    // return this.httpClient.get<any>(
+      // this.usersUrl, customer, {'headers' : headers}
+    // );
 
   }
 

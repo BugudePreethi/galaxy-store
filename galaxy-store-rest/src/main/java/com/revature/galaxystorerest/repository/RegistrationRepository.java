@@ -8,5 +8,5 @@ import com.revature.galaxystorerest.model.Customer;
 @Repository
 public interface RegistrationRepository extends JpaRepository<Customer, Integer> {
 
-	public Customer findByEmailIdAndPassword(String emailId, String password);
+	public Customer findByEmailIdAndPassword(String email, String password);
 }

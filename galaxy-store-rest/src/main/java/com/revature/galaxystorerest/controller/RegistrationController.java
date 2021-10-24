@@ -2,8 +2,7 @@ package com.revature.galaxystorerest.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.galaxystorerest.model.Customer;
@@ -17,10 +16,10 @@ public class RegistrationController {
 	
 	
 	
-	@PostMapping("/loginuser")
-	public Customer loginUser(@RequestBody Customer customer) throws Exception {
-		String tempEmailId =customer.getEmail();
-		String tempPass = customer.getPassword();
+	@GetMapping("/loginuser/{email}/{password}")
+	public Customer loginUser(@PathVariable String email, @PathVariable String password) throws Exception {
+		String tempEmailId = email;
+		String tempPass = password;
 		Customer customerObj = null;
 		if(tempEmailId != null &&tempPass != null) {
 			customerObj= service.fetchUserByEmailIdAndPassword(tempEmailId, tempPass);
