@@ -1,0 +1,12 @@
+img{
+    width: 250px;
+    height: 300px;
+}
+.pack{
+    border: black;
+}
+.thumbnail{
+    width:250px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
