@@ -31,25 +31,5 @@ public class RegistrationController {
 		
 	}
 
-//	@Autowired
-//	private RegistrationService service;
-//	
-//	
-//	
-//	@GetMapping("/loginuser/{email}/{password}")
-//	public Customer loginUser(@PathVariable String email, @PathVariable String password) throws Exception {
-//		String tempEmailId = email;
-//		String tempPass = password;
-//		Customer customerObj = null;
-//		if(tempEmailId != null &&tempPass != null) {
-//			customerObj= service.fetchUserByEmailIdAndPassword(tempEmailId, tempPass);
-//			
-//		}
-//		
-//		if(customerObj == null) {
-//			throw new Exception("Bad credentials");
-//		}
-//		return customerObj;
-//	}
 
 }

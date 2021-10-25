@@ -13,6 +13,4 @@ import com.revature.galaxystorerest.model.Customer;
 public interface RegistrationRepository extends JpaRepository<Customer, Integer> {
 	@Query("select c from Customer c where c.email = :email")
 	List<Customer> findByEmail(@Param("email") String email);
-
-//	public Customer findByEmailAndPassword(String email, String password);
 }
