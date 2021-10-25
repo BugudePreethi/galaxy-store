@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { FilterPipe } from './filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './products/products.component';
 
 
 
@@ -20,16 +21,11 @@ import { HttpClientModule } from '@angular/common/http';
     SignupComponent,
     NavigationComponent,
     HomeComponent,
-    //ProductsComponent,
+    ProductsComponent,
     CartComponent,
-<<<<<<< HEAD
-    LoginComponent,
-    FilterPipe
-=======
     LoginComponent
 
     
->>>>>>> add-view-cart
   ],
   imports: [
     BrowserModule,

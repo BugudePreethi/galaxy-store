@@ -14,7 +14,5 @@ export class ProductService {
     return observable;
   }
 
-  addtocart(product: any){
-    this.CartService.addtoCart(product);
-  }
+  
 }

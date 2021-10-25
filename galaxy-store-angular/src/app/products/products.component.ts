@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from '../data';
 import { Product } from '../model/product';
+import { CartService } from '../service/cart.service';
 import { ProductService } from '../service/product.service';
 
 @Component({
@@ -12,14 +13,23 @@ import { ProductService } from '../service/product.service';
 export class ProductsComponent implements OnInit {
 
   public productList: any;
-  constructor(private service: ProductService) { }
+  constructor(private service: ProductService,private cartService : CartService) { }
 
   ngOnInit(): void {
     this.service.getProduct().subscribe(response=>{
       this.productList = response;
+      this.productList.forEach((a:any) => {
+        Object.assign(a,{quantity:1,total:a.price});
+
+
     })
+  })
+  }
+  addtocart(item: any){
+    this.cartService.addtoCart(item);
   }
 }
+
 
 
 //   findProduct() {
