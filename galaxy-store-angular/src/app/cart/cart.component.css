@@ -28,7 +28,7 @@ h6 {
 }
 
 .card-table {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     min-width: none;
