@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +22,14 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     //ProductsComponent,
     CartComponent,
+<<<<<<< HEAD
     LoginComponent,
     FilterPipe
+=======
+    LoginComponent
+
+    
+>>>>>>> add-view-cart
   ],
   imports: [
     BrowserModule,

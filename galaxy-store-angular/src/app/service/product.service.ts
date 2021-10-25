@@ -15,6 +15,6 @@ export class ProductService {
   }
 
   addtocart(product: any){
-    this.cartService.addtoCart(product);
+    this.CartService.addtoCart(product);
   }
 }
