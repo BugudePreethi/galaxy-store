@@ -9,13 +9,11 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
-import { AddViewCartComponent } from './add-view-cart/add-view-cart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddViewCartComponent,
     SignupComponent,
     NavigationComponent,
     HomeComponent,

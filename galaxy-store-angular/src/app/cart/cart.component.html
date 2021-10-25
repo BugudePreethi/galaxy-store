@@ -7,7 +7,7 @@
                     <tr>
                         <th>Sr.No</th>
                         <th>Product Name</th>
-                        <th>Product Image</th>
+                        <th>Brand</th>
                         <th>Price</th>
                         <th>Quantity</th>
                         <th>Total</th>
@@ -16,17 +16,18 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>Iphone</td>
-                        <td>some image</td>
-                        <td>100</td>
-                        <td>1</td>
-                        <td>100</td>
-                        <td>
-                            <button class="btn btn-danger">Delete</button>
-
-                        </td>
-                    </tr>
+                        <tr *ngFor="let item of products; let i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{item.productName}}</td>
+                            <td >{{item.Brand}</td>
+                            <th>{{item.price}}</th>
+                            <td>{{item.quantity}}</td>
+                            <td >{{item.total}}</td>
+                            <td>
+                                <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+            
                     
                 </tbody>
 
@@ -49,7 +50,7 @@
         <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
         <h4>Your cart is empty!</h4>
         <h6>Add item to it now</h6>
-        <button class ="btn btn-primary">Shop now</button>
+        <button routerLink="/products" class ="btn btn-primary">Shop now</button>
     </div>
 </div>
 </ng-container>
