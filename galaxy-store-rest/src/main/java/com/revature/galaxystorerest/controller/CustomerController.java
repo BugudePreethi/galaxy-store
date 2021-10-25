@@ -24,4 +24,5 @@ public class CustomerController {
 		LOGGER.debug("Customer: {}", customer);
 		customerService.save(customer);
 	}
+	
 }

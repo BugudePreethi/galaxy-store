@@ -2,11 +2,15 @@ img{
     width: 250px;
     height: 300px;
 }
-.pack{
-    border: black;
-}
+
 .thumbnail{
     width:250px;
     padding-top: 10px;
     padding-left: 10px;
+}
+.form-control{
+    border-radius: 3px;
+    width: 800px;
+    margin-left: 20px;
+    border-color: black;
 }
