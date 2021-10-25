@@ -8,16 +8,16 @@ import { Customer } from '../model/customer';
   providedIn: 'root'
 })
 export class CustomerService {
-  usersUrl : string = "";//postman url
+  loginUrl : string = "http://localhost:8080/authenticate";//postman url
 
   constructor(private httpClient : HttpClient) { }
 
-  login() : void {
-    const headers = { 'content-type': 'application/json'};
-    console.log("service start");
-    // return this.httpClient.get<any>(
-      // this.usersUrl, customer, {'headers' : headers}
-    // );
+  login(customer : Customer) : Observable<any> { 
+    const headers = {'content-type':'application/json'};
+    return this.httpClient.post<any>(
+      this.loginUrl,customer,{'headers':headers}
+    );
+    
 
   }
 

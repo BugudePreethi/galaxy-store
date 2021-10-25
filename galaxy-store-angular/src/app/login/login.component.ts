@@ -9,28 +9,33 @@ import { CustomerService } from '../service/customer.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  success: boolean  = false;
+  customer : Customer = {
+    id : 0,
+    name : "",
+    email : "",
+    password : "",
+    address : "",
+    mobileNumber : ""
+  }
+
+  success : boolean = false;
 
   constructor(private customerService:CustomerService) { }
 
   ngOnInit(): void {
   }
 
+  login(): void {
 
-  // login(): void {
+    //console.log("login starts");
+    let observable : Observable<any> = this.customerService.login(this.customer);
+    observable.subscribe( 
+      response => {
+        //console.log("in login response");
+        this.success = true;
 
-  //   console.log("login starts");
-  //   let observable : Observable<any> = this.customerService.login();
-
-  //   observable.subscribe(
-  //     response => {
-  //       this.success = true;
-  //     },
-  //     error => {
-  //       //this.error = error;
-  //     }
-
-
+      }
+    ) 
   }
 
 }
