@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- <div class="row">
     <div class="col-lg-12">
         <span class="material-icons-outlined">
@@ -6,18 +7,22 @@
         </span>
         <input [(ngModel)]="searchKey" type="text" placeholder="Search for Products Here">
         <div>{{searchKey}}</div>
+=======
+<div class="container">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search Product">
+>>>>>>> display-product
     </div>
-    <div class="col-md-3 col-sm-6 pack">
-        <div class="thumbnail">
-            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13407428/2021/2/1/a915c79e-062a-4b50-a4eb-d8ee7d678bbc1612180251244-Ecru-Bomber-Jacket-Kalidar-Skirt-Set-8361612180249537-1.jpg">
-            <div class="caption">
-                <h3>W</h3>
-                <p>Printed Top with Skirt</p>
-                <h5>Price:Rs.3499.00</h5>
-                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+    <div class="row">
+            <div class="card col-md-3 col-sm-6 mb-3" *ngFor="let product of productList">
+                <img src="{{product.url}}">
+                <h5>{{product.brand}}</h5>
+                <p>{{product.name}}</p>
+                <p><strong>${{product.price}}</strong></p>
+                <button class="btn btn-primary" (click)=addtocart(product)>Add to Cart</button>
             </div>
-        </div>
     </div>
+<<<<<<< HEAD
     <div class="col-md-3 col-sm-6 pack">
         <div class="thumbnail">
             <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11361290/2020/7/31/5f31131a-05aa-4e54-ae44-a0ee2713630b1596173114716-WROGN-Men-Blue-Slim-Fit-Solid-Casual-Shirt-With-Printed-Deta-1.jpg">
@@ -140,3 +145,6 @@
         </div>
     </div>
 </div> -->
+=======
+</div>
+>>>>>>> display-product
