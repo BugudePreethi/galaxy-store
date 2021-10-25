@@ -11,22 +11,6 @@ import { ProductService } from '../service/product.service';
 
 export class ProductsComponent implements OnInit {
 
-//   product : Product = {
-//     id : 1,
-//     name : "Kurti with dupatta",
-//     brand : "Biba",
-//     price : 2999
-//   }
-//   searchKey: string ="";
-
-//   products: Product[] = products;
-//   searchKey: string = "";
-  // products: Product[] = products;
-  // searchKey: string = "";
-
-  // findProduct(){
-  //   console.log("Search: "+ this.searchKey);
-  // }
   public productList: any;
   constructor(private service: ProductService) { }
 
@@ -35,21 +19,8 @@ export class ProductsComponent implements OnInit {
       this.productList = response;
     })
   }
+}
 
-//   findProduct(){
-//     console.log("Search: "+ this.searchKey);
-//   }
-//   constructor() { }
-  
-//   ngOnInit(): void {
-    
-//   }
-
-
-//   constructor() { }
-
-//   ngOnInit(): void {
-//   }
 
 //   findProduct() {
 //     //console.log("Search: "+this.searchKey);
