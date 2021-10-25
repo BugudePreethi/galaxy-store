@@ -6,22 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'galaxy-store-angular';
-  email : string | undefined;
-  password : string | undefined;
-
-  constructor(){
-    
-  }
-
-  ngOnInit() {
-
-  }
-
-  logInUser(){
-    if(this.email == ""){
-
-    }
-  }
-  
+  title = 'galaxy-store-angular'; 
 }

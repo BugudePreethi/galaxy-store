@@ -5,4 +5,7 @@ export interface Customer {
 	password:string,
 	address: string,
 	mobileNumber: string	
+
+
 }
+

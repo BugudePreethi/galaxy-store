@@ -14,32 +14,30 @@
 <body>
     <div class="banner-image">
         <form>
+            <div class="alert alert-success" *ngIf="success">Signup Successfull. Please login.</div>
+            <div class="alert alert-error" *ngIf!="success">Unable to add Customer</div>
             <div class="form-group">
-                <label for="name"><b>FIRST NAME:</b></label>
-                <input type="text" name="first_name" id="first_name" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="name"><b>LAST NAME:</b></label>
-                <input type="text" name="last_name" id="last_name" class="form-control">
+                <label for="name"><b>NAME:</b></label>
+                <input type="text" name="name" [(ngModel)]="customer.name" id="name" class="form-control">
             </div>
             <div class="form-group">
                 <label for="email"><b>EMAIL:</b></label>
-                <input type="email" name="email" id="email" class="form-control">
+                <input type="email" name="email" [(ngModel)]="customer.email" id="email" class="form-control">
             </div>
             <div class="form-group">
                 <label for="password"><b>PASSWORD:</b></label>
-                <input type="password" name="password" id="password" class="form-control">
+                <input type="password" name="password" [(ngModel)]="customer.password" id="password" class="form-control">
             </div>
             <div class="form-group">
                 <label for="address"><b>ADDRESS:</b></label>
-                <input type="text" name="address" id="address" class="form-control">
+                <input type="text" name="address" [(ngModel)]="customer.address" id="address" class="form-control">
             </div>
             <div class="form-group">
                 <label for="mobile"><b>MOBILE PHONE:</b></label>
-                <input type="text" name="mobile" id="mobile" class="form-control">
+                <input type="text" name="mobile" [(ngModel)]="customer.mobileNumber" id="mobile" class="form-control">
             </div>
             <div>
-                <input type="button" class="btn btn-primary" value="SignUp" id="signup">
+                <input type="button" class="btn btn-primary" value="SignUp" (click)="signup()" id="signup">
             </div>
         </form>
     </div>

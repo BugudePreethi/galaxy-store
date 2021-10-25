@@ -8,9 +8,19 @@ import { Customer } from '../model/customer';
   providedIn: 'root'
 })
 export class CustomerService {
+
+  signupUrl: string = "http://localhost:8080/customers";
   loginUrl : string = "http://localhost:8080/authenticate";//postman url
 
   constructor(private httpClient : HttpClient) { }
+
+  signup(customer: Customer): Observable<any> {
+    const headers = { 'content-type': 'application/json'};
+    console.log("Signup Service");
+    return this.httpClient.post<any>(
+      this.signupUrl , customer, {'headers':headers}
+      );
+  }
 
   login(customer : Customer) : Observable<any> { 
     const headers = {'content-type':'application/json'};
@@ -20,6 +30,13 @@ export class CustomerService {
     
 
   }
-
-
+  customer: Customer = {  
+    id: 0,
+    name: '',
+    email: '',
+    password: '',
+    address: '',
+    mobileNumber: ''
+  }
 }
+

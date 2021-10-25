@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
     let observable : Observable<any> = this.customerService.login(this.customer);
     observable.subscribe( 
       response => {
-        //console.log("in login response");
+        console.log("in login response");
         this.success = true;
 
       }

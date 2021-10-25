@@ -1,4 +1,142 @@
-<!-- 
-
-<input [(ngmodel)]="searchKey" type="text" placeholder="Find products" (keyup)="findProduct()">
- -->
+<!-- <div class="row">
+    <div class="col-lg-12">
+        <span class="material-icons-outlined">
+            <b>Search </b>
+            <i class="material-icons">search</i>
+        </span>
+        <input [(ngModel)]="searchKey" type="text" placeholder="Search for Products Here">
+        <div>{{searchKey}}</div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13407428/2021/2/1/a915c79e-062a-4b50-a4eb-d8ee7d678bbc1612180251244-Ecru-Bomber-Jacket-Kalidar-Skirt-Set-8361612180249537-1.jpg">
+            <div class="caption">
+                <h3>W</h3>
+                <p>Printed Top with Skirt</p>
+                <h5>Price:Rs.3499.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11361290/2020/7/31/5f31131a-05aa-4e54-ae44-a0ee2713630b1596173114716-WROGN-Men-Blue-Slim-Fit-Solid-Casual-Shirt-With-Printed-Deta-1.jpg">
+            <div class="caption">
+                <h3>WROGN</h3>
+                <p>Causal Shirt with Printed Detailing</p>
+                <h5>Price:Rs.1399.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15048482/2021/9/16/fa2839dd-523d-4bff-864d-de5217e97de71631788112532PinkChickGirlsRoseEmbellishedSatinAndNetMaxiDress1.jpg">
+            <div class="caption">
+                <h3>Pink Chick</h3>
+                <p>Satin and Net Maxi Dress</p>
+                <h5>Price:Rs.3299.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9764745/2019/5/22/f19a23e7-c6a7-4dec-8718-6c4c1ceaafbc1558508406506-JBN-Creation-8601558508405782-1.jpg">
+            <div class="caption">
+                <h3>JBN Creation</h3>
+                <p>Solid Kurta with Dhoti Pants</p>
+                <h5>Price:Rs.999.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13446204/2021/1/20/6e7c9590-675a-4710-aa6c-f33e5ee5f3361611143622630-Biba-Women-Kurta-Sets-7671611143619627-1.jpg">
+            <div class="caption">
+                <h3>Biba</h3>
+                <p>Kurthi with dupatta</p>
+                <h5>Price:Rs.2999.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10456354/2019/8/22/d56e75f6-f1a7-4fdd-b430-51befb36f88d1566454760527-Campus-Sutra-Men-Colourblocked-Casual-Spread-Shirt-290156645-1.jpg">
+            <div class="caption">
+                <h3>Campus Sutra</h3>
+                <p>Causal Shirt</p>
+                <h5>Price:Rs.899.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11379892/2020/2/11/9fad6986-5a45-4c95-a89d-8efbc68a8f431581418317975-Gini-and-Jony-Boys-Tshirts-2161581418317004-1.jpg">
+            <div class="caption">
+                <h3>Gini and Jony</h3>
+                <p>Printed Round Neck T-shirt</p>
+                <h5>Price:Rs.399.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9322599/2019/9/24/2ca33bf5-470b-476b-8051-12a9ae324ba01569315094659-Biba-Women-Dresses-1201569315093361-1.jpg">
+            <div class="caption">
+                <h3>Biba</h3>
+                <p>Printed Maxi Dress</p>
+                <h5>Price:Rs.1999.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12134770/2020/12/14/85089acf-4159-410c-b173-26d8ad7f9eeb1607950721245-Anouk-Women-Kurta-Sets-1761607950719320-6.jpg">
+            <div class="caption">
+                <h3>Anouk</h3>
+                <p>Kurta with Dhoti Pants</p>
+                <h5>Price:Rs.999.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10297751/2019/8/14/c842de3d-0825-4965-af95-84fb1b972c7f1565774998813-Anouk-Women-Kurtas-5131565774997903-1.jpg">
+            <div class="caption">
+                <h3>Anouk</h3>
+                <p>Printed A-Line Kurta</p>
+                <h5>Price:Rs.799.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>    
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12665150/2020/10/22/520a897d-724b-4285-b822-3855e0a2c4c81603361374103-Tommy-Hilfiger-Men-Tshirts-8341603361372297-1.jpg">
+            <div class="caption">
+                <h3>Tommy Hilfiger</h3>
+                <p>Printed Rounded Neck T-Shirt</p>
+                <h5>Price:Rs.1699.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pack">
+        <div class="thumbnail">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11623792/2020/3/12/21157de4-cabe-4a1b-8cfb-78730c969ee31583996479150-Nauti-Nati-Girls-Navy-Blue-Printed-A-Line-Dress-722158399647-1.jpg">
+            <div class="caption">
+                <h3>Nauti Nati</h3>
+                <p>Polka Dots Tiered A-Line Dress</p>
+                <h5>Price:Rs.599.00</h5>
+                <a routerLink="cart"><button class="btn btn-block btn-primary">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>
+</div> -->
