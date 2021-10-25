@@ -10,11 +10,11 @@ import { CustomerService } from '../service/customer.service';
 export class SignupComponent implements OnInit {
   customer : Customer ={
     id: 0,
-    name: "Smith",
-    email: "smith@gmail.com",
-    password: "1234",
-    address: "D4,LA",
-    mobileNumber: "8765432190"
+    name: "",
+    email: "",
+    password: "",
+    address: "",
+    mobileNumber: ""
   }
 
   success: boolean = false;

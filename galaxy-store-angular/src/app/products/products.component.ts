@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { products } from '../data';
+import { Product } from '../model/product';
 
 @Component({
   selector: 'app-products',
@@ -7,6 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
+  products: Product[] = products;
+  searchKey: string = "";
+
+  findProduct(){
+    console.log("Search: "+ this.searchKey);
+  }
   constructor() { }
 
   ngOnInit(): void {

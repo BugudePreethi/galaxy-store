@@ -18,7 +18,13 @@ export class CustomerService {
     return this.httpClient.post<any>(
       this.signupUrl , customer, {'headers':headers}
       );
-    
   }
-
+  customer: Customer = {
+    id: 0,
+    name: '',
+    email: '',
+    password: '',
+    address: '',
+    mobileNumber: ''
+  }
 }
