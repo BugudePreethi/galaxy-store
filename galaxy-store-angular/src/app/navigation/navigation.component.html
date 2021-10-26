@@ -4,8 +4,14 @@
     <i class="material-icons">store</i>
     </span>Galaxy Store
   </a>
+  <div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+</div>
+<span class="fas fa-search search-icon"></span>
+
+<div>
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-    <span class="navbar-toggler-icon"></span>
+  <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarMenu">
     <ul class="navbar-nav">
@@ -51,6 +57,7 @@
       </li>
     </ul>
   </div>
+</div>
 </nav>
           
 

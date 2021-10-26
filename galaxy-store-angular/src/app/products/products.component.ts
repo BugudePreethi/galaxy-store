@@ -13,6 +13,10 @@ import { ProductService } from '../service/product.service';
 export class ProductsComponent implements OnInit {
 
   public productList: any;
+  searchKey:string ="";
+
+  
+
   constructor(private service: ProductService,private cartService : CartService) { }
 
   ngOnInit(): void {
@@ -24,11 +28,17 @@ export class ProductsComponent implements OnInit {
 
     })
   })
+  this.cartService.search.subscribe((val:any)=>{
+    this.searchKey = val;
+  })
   }
+  
+ 
   addtocart(item: any){
     this.cartService.addtoCart(item);
   }
 }
+
 
 
 

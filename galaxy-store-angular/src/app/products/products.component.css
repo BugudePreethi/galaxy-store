@@ -9,4 +9,10 @@ img{
     margin-left: 20px;
     border-color: black
 }
-
+.search-icon {
+    position: absolute;
+    z-index: 10;
+    right: 59%;
+    top: 20px;
+    color: blue;
+}
