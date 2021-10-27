@@ -5,15 +5,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Technologies Used
 
-Angular 2+
-HTML
-CSS
-JavaScript
-Spring Boot
-Spring Data
-MySQL
-Spring Framework
-Spring AOP
+Angular 2+, 
+HTML, 
+CSS, 
+JavaScript, 
+Spring Boot, 
+Spring Data, 
+MySQL, 
+Spring Framework, 
+Spring AOP.
 
 ## Further help
 
