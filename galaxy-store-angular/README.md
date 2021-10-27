@@ -66,7 +66,7 @@ If the cart is empty then a card with "Your card is empty" is displayed along wi
 
 ## Contributors
 
-B.Preethi
-S.Sonia
-B.Chaitanya
-D.Pallavi
+B.Preethi, 
+S.Sonia, 
+B.Chaitanya, 
+D.Pallavi.
