@@ -1,7 +1,7 @@
 # GalaxyStoreAngular
 ## Project Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8. The project was about an online cloth store.
+This project was about an online cloth store.
 
 ## Technologies Used
 
@@ -14,10 +14,6 @@ Spring Data,
 MySQL, 
 Spring Framework, 
 Spring AOP.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Features
 
